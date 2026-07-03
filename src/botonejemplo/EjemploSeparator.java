@@ -4,6 +4,9 @@
  */
 package botonejemplo;
 
+import java.awt.Color;
+import javax.swing.SwingConstants;
+
 /**
  *
  * @author isaac
@@ -42,11 +45,12 @@ public class EjemploSeparator extends javax.swing.JFrame {
         jLabel2.setText("Gestion de Estudiantes");
 
         jButton4.setText("Agregar");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
 
         jButton5.setText("Modificar");
 
-        jSeparator1.setBackground(new java.awt.Color(255, 51, 51));
-        jSeparator1.setForeground(new java.awt.Color(0, 255, 0));
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jSeparator1.setToolTipText("Separador entre accciones principales y secundarias");
 
         jButton6.setText("Eliminar");
@@ -94,6 +98,10 @@ public class EjemploSeparator extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+         javax.swing.JOptionPane.showMessageDialog(this, "El botón funciona");
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
